@@ -1,4 +1,4 @@
-node{
+node('slave'){
    stage('SCM Checkout'){
        git credentialsId: 'rcaws22', url: 'https://github.com/rcaws22/my-app'
    }
